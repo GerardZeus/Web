@@ -1,0 +1,6 @@
+version: "4.38"
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
