@@ -7,3 +7,9 @@ services:
     volumes:
       - ./code:/code
       - ./site.conf:/etc/nginx/conf.d/site.conf
+    links:
+      - php
+  php:
+    image: php:8.3-fpm
+    volumes:
+      - ./code:/code
